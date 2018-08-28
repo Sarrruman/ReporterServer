@@ -38,8 +38,7 @@ img {
 				<th scope="col">Date</th>
 				<th scope="col">Photo</th>
 				<th scope="col">Comment</th>
-				<th scope="col">Latitude</th>
-				<th scope="col">Longitude</th>
+				<th scope="col">Position</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -73,8 +72,7 @@ img {
 										"<td>" + item.dateTimeCreated + "</td>"
 												+ "<td><div class='image-div'><img src='" + item.photo + "'/></div>"
 												+ "</td>" + "<td>" + item.comment + "</td>"
-												+ "<td>" + item.latitude + "</td>"
-												+ "<td>" + item.longitude + "</td>")
+												+ "<td> <a href='position.html?lat=" + item.latitude + "&lon=" + item.longitude + "'>" + item.latitude + ", " + item.longitude + "</a></td>")
 										.appendTo('#reports_table');
 							});
 						}
